@@ -1,0 +1,11 @@
+{
+  "name": "some-folder",
+  "version": "1.0.0",
+  "description": "this is my fodd ordering app",
+  "main": "practise .js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
