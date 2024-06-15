@@ -12,3 +12,5 @@ const Heading =({hello})=> (
 const root = ReactDOM.createRoot(document.getElementById("form"));
 const value=document.getElementById("form");
 root.render(<Heading hello="hie"/>)
+
+const hello="iam safe";
