@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Body from "./components/Body";
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
@@ -33,11 +33,17 @@ import { AppLayoutContent } from "./components/AppLayoutContent";
 */
 const AppLayout = () => {
     return (
-        <Provider store={appStore}>
-            <AppLayoutContent />
-        </Provider>
+       <Provider store={appStore}>       
+          
+            <AppLayoutContent />   
+
+            <Outlet/> 
+
+        </Provider>       
+       
     );
 };
+
 
 const browserRouter = createBrowserRouter([
     {
@@ -76,3 +82,4 @@ const browserRouter = createBrowserRouter([
 // Render the heading into the root element
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={browserRouter} />);
+
